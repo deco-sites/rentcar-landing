@@ -3,7 +3,18 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "Header"
+      "__resolveType": "site/sections/Header.tsx"
+    },
+    {
+      "__resolveType": "site/sections/BannerMain.tsx",
+      "action": {
+        "subtitle": "Shop Online. Pickup Today. It’s Fast, Simple and Easy.  Learn More.",
+        "title": "Fast, Simple and Easy"
+      },
+      "banner": {
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10817/29c990ce-5fd3-4776-ad86-de6480f4ee88",
+        "alt": "Banner"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
