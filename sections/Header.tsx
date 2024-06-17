@@ -6,6 +6,12 @@ export interface Nav {
     src?: ImageWidget;
     alt?: string;
   };
+  navigation?: {
+    links: {
+      label?: string;
+      url?: string;
+    }[];
+  }
 }
 
 export default function Header({
@@ -14,13 +20,45 @@ export default function Header({
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
     alt: "Logo",
   },
+  navigation = {links: [
+      {
+        label: "Home",
+        url: "/"
+      },
+      {
+        label: "Listings",
+        url: "/"
+      },
+      {
+        label: "Blog",
+        url: "/"
+      },
+      {
+        label: "Pages",
+        url: "/"
+      },
+      {
+        label: "About",
+        url: "/"
+      },
+      {
+        label: "Contact",
+        url: "/"
+      }
+    ]}
 }: Nav) {
   return (
-    <header class="w-full p-[20px]">
+    <div class="w-full flex justify-between p-[20px]">
       <a class="" href="/">
-        <img src={logo.src} alt={logo.alt} class="" />
+        <Image src={logo.src} alt={logo.alt} class="" />
       </a>
-      
-    </header>
+      <nav class="">
+        {navigation?.links.map((link) => (
+          <li>
+            <a href={link.url} title={link.label} class="">Link</a>
+          </li>
+        ))}
+      </nav>
+    </div>
   );
 }
