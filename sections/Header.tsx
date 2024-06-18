@@ -59,7 +59,7 @@ export default function Header({
             <a
               href={link.url}
               title={link.label}
-              class="text-black hover:underline"
+              class="text-white hover:underline"
             >
               {link.label}
             </a>

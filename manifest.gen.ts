@@ -4,15 +4,17 @@
 
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
-import * as $$$$$$0 from "./sections/BannerMain.tsx";
-import * as $$$$$$1 from "./sections/Header.tsx";
-import * as $$$$$$2 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$0 from "./sections/BannerCustom.tsx";
+import * as $$$$$$1 from "./sections/BannerMain.tsx";
+import * as $$$$$$2 from "./sections/Header.tsx";
+import * as $$$$$$3 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
-    "site/sections/BannerMain.tsx": $$$$$$0,
-    "site/sections/Header.tsx": $$$$$$1,
-    "site/sections/Theme/Theme.tsx": $$$$$$2,
+    "site/sections/BannerCustom.tsx": $$$$$$0,
+    "site/sections/BannerMain.tsx": $$$$$$1,
+    "site/sections/Header.tsx": $$$$$$2,
+    "site/sections/Theme/Theme.tsx": $$$$$$3,
   },
   "apps": {
     "site/apps/decohub.ts": $$$$$$$$$$$0,

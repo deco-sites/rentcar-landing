@@ -15,6 +15,30 @@
         "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10817/29c990ce-5fd3-4776-ad86-de6480f4ee88",
         "alt": "Banner"
       }
+    },
+    {
+      "__resolveType": "site/sections/BannerCustom.tsx",
+      "section": {
+        "title": "Browse by Type",
+        "link": "/"
+      },
+      "banners": {
+        "format": "BannerHo",
+        "banner": [
+          {
+            "title": "Lmabo",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10817/666705c5-0da1-4f36-9357-40e495d45f8b",
+            "brand": "Audi",
+            "url": "/"
+          },
+          {
+            "title": "BMW",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10817/2dfb3dfe-a3f9-4d6a-a566-7718b4840c4c",
+            "url": "/",
+            "brand": "BMW"
+          }
+        ]
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
