@@ -36,6 +36,18 @@
             "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10817/2dfb3dfe-a3f9-4d6a-a566-7718b4840c4c",
             "url": "/",
             "brand": "BMW"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10817/8383f09c-8637-4c77-9b89-656dc2091bfd",
+            "brand": "Mercedes"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10817/7a55379c-2baf-46e4-91f5-f0acac0ba50e",
+            "brand": "Hybrid"
+          },
+          {
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/10817/b60efb82-2614-4fbb-9dee-1fe0c702accf",
+            "brand": "Coupe"
           }
         ]
       }

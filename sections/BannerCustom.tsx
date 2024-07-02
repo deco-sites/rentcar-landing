@@ -1,5 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import { BannerHo } from "site/components/ui/BannerHo/index.tsx";
+import BannerVert from "site/components/ui/BannerVert/index.tsx";
 
 export interface Section {
   title?: string;
@@ -24,38 +25,30 @@ export interface Props {
 }
 
 export default function BannerCustom({ section, banners }: Props) {
+  const bannersFormat = (
+    format: string | undefined,
+    banners: Array<Banner>
+  ) => {
+    switch (format) {
+      case "BannerHo":
+        return <BannerHo banner={banners} />;
+      case "BannerVert":
+        return <BannerVert banner={banners} />;
+      default:
+        return <BannerHo banner={banners} />;
+    }
+  };
   return (
-    <div class="w-full flex justify-center p-[20px]">
+    <div class="w-full flex justify-center px-[20px] py-[40px]">
       <div class="w-full max-w-[1400px] flex flex-col gap-[30px]">
-        <div class="w-full flex justify-between item-center">
-          <p class="text-black">{section.title}</p>
-          <a class="text-black" href={section.link}>
+        <div class="w-full flex justify-between items-end">
+          <p class="text-black text-4xl font-bold">{section.title}</p>
+          <a class="text-black text-base" href={section.link}>
             View All
           </a>
         </div>
         <div class="w-full">
-          {banners.format === "BannerHo" ? (
-            <div class="w-full flex item-center justify-between gap-[25px]">
-              {banners.banner.map((item) => (
-                <div class="w-full">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    title={item.title}
-                    class="w-full"
-                  />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div class="w-full flex flex-col item-center gap-[25px]">
-              {banners.banner.map((item) => (
-                <div class="w-full">
-                  <Image src={item.image} alt={item.title} title={item.title} />
-                </div>
-              ))}
-            </div>
-          )}
+          {bannersFormat(banners.format, banners.banner)}
         </div>
       </div>
     </div>

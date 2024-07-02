@@ -33,8 +33,20 @@
   [data-dot].current div .dot {
     background-color: black;
   }
+
   [data-dot] div .dot {
     background-color: #E4E4E7;
+  }
+
+  .banner-horizontal div:first-child,
+  .banner-horizontal div:nth-child(2) {
+    flex-basis: calc(100%/2.2);
+  }
+
+  .banner-horizontal div:nth-child(3),
+  .banner-horizontal div:nth-child(4),
+  .banner-horizontal div:last-child {
+    flex-basis: calc(100%/3.2);
   }
 }
 

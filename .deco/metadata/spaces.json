@@ -77,22 +77,22 @@
         }
       ],
       "tabs": {
-        "collections::Blog::article::Blog::%7B%7D": {
+        "tab-1": {
           "name": "Blog",
           "icon": "article",
           "render": "function",
           "viewId": "Blog",
-          "id": "collections::Blog::article::Blog::%7B%7D",
+          "id": "tab-1",
           "state": {
             "__signal": null
           }
         },
-        "collections::Blog%20Items::article::Blog%20Items::%7B%7D": {
+        "tab-2": {
           "name": "Blog Items",
           "icon": "article",
           "render": "function",
           "viewId": "Blog Items",
-          "id": "collections::Blog%20Items::article::Blog%20Items::%7B%7D",
+          "id": "tab-2",
           "state": {
             "__signal": null
           }
@@ -445,7 +445,7 @@
             "content": [
               {
                 "type": "stack",
-                "width": 26.776859504132233,
+                "width": 24.43910256410256,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
@@ -467,7 +467,7 @@
               },
               {
                 "type": "stack",
-                "width": 73.22314049586777,
+                "width": 75.56089743589742,
                 "isClosable": true,
                 "reorderEnabled": true,
                 "title": "",
